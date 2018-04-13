@@ -1,14 +1,14 @@
 import { Navigation } from 'react-native-navigation';
 import { Provider } from 'react-redux';
 
-import AuthScreen from './screens/Auth/Auth';
-import SharePlaceScreen from './screens/SharePlace/SharePlace';
-import FindPlaceScreen from './screens/FindPlace/FindPlace';
+import AuthScreen from './src/screens/Auth/Auth';
+import FirstTabScreen from './src/screens/FirstTab/FirstTab';
+import SecondTabScreen from './src/screens/SecondTab/SecondTab';
 
 //Register Screens
 Navigation.registerComponent("AuthScreen", () => AuthScreen);
-Navigation.registerComponent("SharePlaceScreen", () => SharePlaceScreen);
-Navigation.registerComponent("FindPlaceScreen", () => FindPlaceScreen);
+Navigation.registerComponent("FirstTabScreen", () => FirstTabScreen);
+Navigation.registerComponent("SecondTabScreen", () => SecondTabScreen);
 
 //Start a App
 Navigation.startSingleScreenApp({

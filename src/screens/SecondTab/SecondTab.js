@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import { View, Text } from 'react-native';
 
-class SharePlaceScreen extends Component {
+class SecondTabScreen extends Component {
     render() {
         return (
             <View>
-                <Text>Share a place Screen</Text>
+                <Text>This is the second Screen</Text>
             </View>
         );
     }
 }
 
-export default SharePlaceScreen;
+export default SecondTabScreen;

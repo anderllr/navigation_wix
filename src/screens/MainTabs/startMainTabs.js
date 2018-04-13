@@ -7,21 +7,21 @@ const startTabs = () => {
     //     after this promise will be concluded
 
     Promise.all([
-        Icon.getImageSource("md-map", 30),
-        Icon.getImageSource("ios-share-alt", 30)
+        Icon.getImageSource("md-flash", 30),
+        Icon.getImageSource("md-navigate", 30)
     ]).then(sources => {
         Navigation.startTabBasedApp({
             tabs: [
                 {
-                    screen: "FindPlaceScreen",
-                    label: 'Find Place',
-                    title: 'Find Place',
+                    screen: "FirstTabScreen",
+                    label: 'First Tab',
+                    title: 'First Tab Screen',
                     icon: sources[0]
                 },
                 {
-                    screen: "SharePlaceScreen",
-                    label: 'Share Place',
-                    title: 'Share Place',
+                    screen: "SecondTabScreen",
+                    label: 'Second Tab',
+                    title: 'Second Tab Screen',
                     icon: sources[1]
                 }
             ]
